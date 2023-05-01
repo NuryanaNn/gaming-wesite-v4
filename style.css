@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Teko:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #131e2c;
+    color: #fff;
+}
+
+header .navbar{
+    background-color: transparent;
+    padding: 1rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background-color: #141217;
+}
+
+header .navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+header li{
+    margin-right: 30px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+header a:hover{
+    color: #dd163b;
+    transition: .5s;
+}
+
+
+.hero .card{
+    height: 658px;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    position: relative;
+}
+
+.hero .card1{
+    background-image: url('slider_bg_01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .card2{
+    background-image: url('slider_bg_02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .heroText{
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+}
+
+.hero .heroText h1{
+    font-size: 70px;
+}
+
+.hero .heroText span,
+.hero .heroText h3{
+    color: #dd163b;
+}
+
+.hero .overlay{
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero .heroText p{
+    margin: 15px 0;
+}
+
+.hero .heroText button,
+.aboutUs button,
+.community .card button,
+.blogContent .cardText button{
+    background-color: #2f3541;
+    padding: 15px 25px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* About us section */
+.aboutUs,
+.release,
+.team,
+.trending,
+.streaming,
+.product,
+.blog{
+    padding: 3rem 4%;
+}
+
+.aboutUs .title,
+.release .title,
+.team .title,
+.trending .title,
+.streaming .title,
+.product .title,
+.blog .title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aboutUs .title h1,
+.release .title h1,
+.team .title h1,
+.trending .title h1,
+.streaming .title h1,
+.product .title h1,
+.blog .title h1{
+    font-size: 35px;
+}
+
+.aboutUs .title p,
+.release .title p,
+.team .title p,
+.trending .title p,
+.streaming .title p,
+.product .title p,
+.blog .title p{
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.aboutUs span,
+.release span,
+.team span,
+.trending span,
+.streaming span,
+.product span,
+.blog span{
+    color: #dd163b;
+}
+
+.aboutUsContent{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutUs .Images{
+    border: 8px solid #dd163b;
+    position: relative;
+    height: 600px;
+}
+
+.aboutUs .Images::before{
+    content: '';
+    background-color: #131e2c;
+    top: -8px;
+    left: 15%;
+    height: 8px;
+    width: 300px;
+    position: absolute;
+}
+
+.aboutUs .Images::after{
+    content: '';
+    background-color: #131e2c;
+    bottom: -8px;
+    left: 15%;
+    height: 8px;
+    width: 300px;
+    position: absolute;
+}
+
+.aboutUs img{
+    height: 100%;
+}
+
+.aboutUs .aboutText{
+    max-width: 600px;
+}
+
+.aboutUs .aboutText h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.aboutUs .aboutText p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.aboutUs ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.aboutUs ul li i{
+    margin-right: 10px;
+    color: #dd163b;
+}
+
+/* Count */
+.count{
+    padding: 2rem 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.count .card{
+    background-color: #2f3541;
+    width: 300px;
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.count .card h1{
+    font-size: 40px;
+}
+
+.count span{
+    color: #dd163b;
+}
+
+.count p{
+    font-size: 20px;
+}
+
+.count .card:hover{
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.releaseContent{
+    margin-top: 40px;
+}
+
+.releaseContent .card{
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.releaseContent .images,
+.releaseContent img{
+    width: 100%;
+    height: 100%;
+}
+
+.releaseContent .card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    visibility: hidden;
+}
+
+.releaseContent .overlayContent i{
+    color: gold;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.releaseContent .card:hover .overlay{
+    visibility: visible;
+}
+
+/* Team */
+.teamContent{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teamContent .card{
+    background-color: #191919;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.teamContent .card .images{
+    width: 250px;
+}
+
+.teamContent .card img{
+    width: 100%;
+}
+
+.teamContent .card ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.teamContent li{
+    margin-right: 30px;
+    background-color: #2f3541;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+
+.teamContent .card a{
+    color: #fff;
+}
+
+.teamContent .card:hover h3{
+    color: #dd163b;
+    transition: .5s;
+}
+
+/* Trending */
+.trendingContent{
+    margin-top: 50px;
+}
+
+.trendingContent .card{
+    background: radial-gradient(circle, rgba(95,9,29,1) 30%, rgba(12,2,35,1) 62%);;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.trendingContent .card .cardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.trendingContent .card h1{
+    font-size: 40px;
+}
+
+.trendingContent .card p{
+    margin: 20px 0;
+}
+
+.trendingContent .card ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.trendingContent .card li{
+    margin-right: 40px;
+}
+
+.trendingContent .card a{
+    color: #fff;
+}
+
+.streamingContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.streamingContent .card{
+    width: 900px;
+    height: 400px;
+}
+
+.streamingContent .images,
+.streamingContent img{
+    width: 100%;
+}
+
+/* Product */
+.productContent{
+    margin-top: 60px;
+}
+
+.productContent .card{
+    width: 300px;
+    text-align: center;
+    background-color: #141217;
+    height: 400px;
+}
+
+.productContent .card .images{
+    width: 100%;
+    height: 250px;
+}
+
+.productContent .card .images img{
+    height: 100%;
+}
+
+.productContent .card .cardText{
+    background-color: #191919;
+    padding: 20px 0;
+}
+
+.productContent .card h4{
+    margin: 15px 0;
+}
+
+.productContent .card i{
+    color: gold;
+}
+
+.community{
+    padding: 0 4%;
+}
+
+.community .card{
+    background-color: #00081f;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.community .card h4{
+    color: #dd163b;
+    font-weight: lighter;
+}
+
+.community .card h1{
+    font-size: 40px;
+}
+
+.community span{
+    color: #dd163b;
+}
+
+.community .card p{
+    margin: 15px 0;
+}
+
+
+.blogContent{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blogContent .card{
+    width: 350px;
+    background-color: #141217;
+    cursor: pointer;
+}
+
+.blogContent .images,
+.blogContent img{
+    width: 100%;
+}
+
+.blogContent .cardText{
+    padding: 20px;
+    text-align: center;
+}
+
+.blogContent .cardText p{
+    margin: 15px;
+}
+
+/* News */
+.news{
+    padding: 2rem 5%;
+}
+
+.news .card{
+    background-color: #191919;
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news .card h1{
+    font-size: 40px;
+}
+
+.news .card span{
+    color: #dd163b;
+}
+
+.news .card .inputBx{
+    position: relative;
+}
+
+.news .card input{
+    padding: 10px;
+    width: 400px;
+}
+
+.news .card button{
+    padding: 12px 20px;
+    background-color: #dd163b;
+    color: #fff;
+    border: none;
+}
+
+/* footer */
+footer{
+    background-color: #141217;
+    padding: 2rem 4%;
+    justify-content: space-between;
+    display: flex;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+footer li{
+    margin-right: 15px;
+}
+
+.footer1{
+    max-width: 400px;
+}
+
+footer p{
+    margin-top: 15px;
+}
